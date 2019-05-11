@@ -165,9 +165,9 @@ export default {
   fill: #e5e5da;
 }
 .likeBody {
-  padding-top: 32vh;
+  padding-top: 50vh;
   width: 100vw;
-  height: 68vh;
+  height: 50vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
