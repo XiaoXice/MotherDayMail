@@ -2,13 +2,12 @@
   <div class="likeBody">
     <div class="wrapper">
       <div class="container">
-        <div class="topfold"></div>
+        <div class="topfold" :style="[{'border-width':'160px '+width()+'px 0 '+width()+'px'}]"></div>
         <div class="letter">
           <div class="upper">
             <div class="front">
               <p>
-                定下一个目标吧，今年为母亲做一件事情。
-                <br>在明年询问完成情况
+                写下一件这一年里想为妈妈做的事，明年的母亲节我们将通过邮件把这个小目标重新发给您，看看当初的目标是否已经实现
               </p>
             </div>
             <div class="back"></div>
@@ -57,7 +56,14 @@ export default {
     };
   },
   methods: {
-    click() {}
+    click() {},
+    width(){
+      if(document.body.offsetWidth <= 400){
+        return document.body.offsetWidth/2
+      }else{
+        return 200
+      }
+    }
   },
   mounted() {
     var tl = new TimelineMax({
